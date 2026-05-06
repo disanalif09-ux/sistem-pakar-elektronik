@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Pakar Elektronik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Halaman Awal -->
+  <div id="halamanAwal" class="container">
+    <h1>KATEGORI PRODUK</h1>
+    <div class="kategori">
+      <div class="card" onclick="pilihPerangkat('kulkas')">
+        <img src="kulkas.jpg" alt="Kulkas">
+        <h3>Kulkas</h3>
+      </div>
+      <div class="card" onclick="pilihPerangkat('ricecooker')">
+        <img src="rice cooker.jpg" alt="Rice Cooker">
+        <h3>Rice Cooker</h3>
+      </div>
+      <div class="card" onclick="pilihPerangkat('kipas')">
+        <img src="kipas.jpg" alt="Kipas Angin">
+        <h3>Kipas Angin</h3>
+      </div>
+      <div class="card" onclick="pilihPerangkat('dispenser')">
+        <img src="dispenser.jpg" alt="Dispenser">
+        <h3>Dispenser</h3>
+      </div>
+      <div class="card" onclick="pilihPerangkat('mesincuci')">
+        <img src="mesin cuci.jpg" alt="Mesin Cuci">
+        <h3>Mesin Cuci</h3>
+      </div>
+      <div class="card" onclick="pilihPerangkat('setrika')">
+        <img src="setrika.jpg" alt="Setrika">
+        <h3>Setrika</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Halaman Gejala -->
+  <div id="halamanGejala" class="container" style="display:none;">
+    <h2 id="judulGejala"></h2>
+    <div id="daftarGejala"></div>
+    <button onclick="kembaliAwal()">⬅️ Kembali</button>
+  </div>
+
+  <!-- Halaman Hasil Diagnosa -->
+  <div id="hasil" class="container" style="display:none;"></div>
+
+  <!-- Halaman Keluar -->
+  <div id="keluar" class="container" style="display:none;">
+    <h2>✨ Terima Kasih telah menggunakan sistem!</h2>
+    <button onclick="kembaliAwal()">⬅️ Kembali ke Awal</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

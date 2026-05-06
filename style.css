@@ -1,0 +1,124 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container umum */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Judul utama */
+h1 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Subjudul */
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Kategori produk */
+.kategori {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Card produk */
+.card {
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Hover efek */
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Tombol umum */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* Hasil diagnosa */
+#hasil {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 6px solid #007BFF;
+  border-radius: 10px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#hasil h3 {
+  margin-bottom: 12px;
+  color: #007BFF;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
